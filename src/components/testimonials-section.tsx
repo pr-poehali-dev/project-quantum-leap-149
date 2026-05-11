@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
-    content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
-  },
-  {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
+    name: "Алексей Морозов",
+    role: "CISO, Финансовая группа «Восток»",
     avatar: "/cybersecurity-expert-man.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "После внедрения комплексной системы ИБ количество инцидентов сократилось на 94%. Мы наконец знаем, что наши данные под надёжной защитой.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
+    name: "Наталья Соколова",
+    role: "Директор по ИТ, Медцентр «Здоровье»",
+    avatar: "/professional-woman-scientist.png",
+    content:
+      "Защита персональных данных пациентов — наш приоритет. Благодаря грамотно выстроенной системе ИБ мы полностью соответствуем требованиям 152-ФЗ.",
+  },
+  {
+    name: "Дмитрий Ким",
+    role: "Руководитель отдела безопасности, ГК «Интегра»",
     avatar: "/asian-woman-tech-developer.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Системный подход к информационной безопасности — это не расходы, а инвестиции. Предотвращённые атаки сэкономили нам десятки миллионов рублей.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют организации</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Реальный опыт компаний, внедривших комплексную защиту информационных систем
           </p>
         </div>
 

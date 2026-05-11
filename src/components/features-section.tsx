@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
-  },
-  {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
+    title: "Защита информации",
+    description: "Многоуровневое шифрование данных с соблюдением требований ГОСТ Р 34.12 и международных стандартов ISO 27001.",
     icon: "lock",
-    badge: "Сертификат",
+    badge: "ГОСТ",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Антивирусная защита",
+    description: "Обнаружение и нейтрализация вирусов, троянов, шпионского ПО и других вредоносных программ в реальном времени.",
+    icon: "shield",
+    badge: "Real-time",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Контроль доступа",
+    description: "Разграничение прав пользователей, многофакторная аутентификация и управление привилегиями в информационных системах.",
+    icon: "key",
+    badge: "IAM",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Мониторинг угроз",
+    description: "Интеллектуальный анализ сетевого трафика и поведенческих паттернов для раннего обнаружения кибератак.",
+    icon: "radar",
+    badge: "SIEM",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Защита сетей",
+    description: "Межсетевые экраны, системы предотвращения вторжений (IPS/IDS) и сегментация корпоративной сети.",
+    icon: "network",
+    badge: "Firewall",
+  },
+  {
+    title: "Резервное копирование",
+    description: "Автоматическое резервирование критичных данных, восстановление после инцидентов и обеспечение непрерывности бизнеса.",
+    icon: "database",
+    badge: "Backup",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Ключевые направления защиты</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Комплексный подход к информационной безопасности — от защиты периметра до реагирования на инциденты
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "lock" && "🔒"}
+                    {feature.icon === "shield" && "🛡️"}
+                    {feature.icon === "key" && "🔑"}
+                    {feature.icon === "radar" && "📡"}
+                    {feature.icon === "network" && "🌐"}
+                    {feature.icon === "database" && "💾"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
